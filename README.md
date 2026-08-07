@@ -1,5 +1,24 @@
-# Vue 3 + TypeScript + Vite
+# Farm Tracker
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Required Environment Variables
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Create a local `.env` file using `.env.example` as template:
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+
+## GitHub Pages Deployment Secrets
+
+For GitHub Actions deploys, add these repository secrets:
+
+1. `VITE_SUPABASE_URL`
+2. `VITE_SUPABASE_PUBLISHABLE_KEY`
+
+Path in GitHub:
+
+1. Open repository
+2. Go to Settings
+3. Go to Secrets and variables > Actions
+4. Add the two secrets above
+
+The deploy workflow reads these secrets at build time.
